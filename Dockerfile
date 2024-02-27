@@ -12,6 +12,10 @@ RUN npm run build
 # Con la palabra FROM en en dockerfile, se identifica el inicio
 # de un nuevo bloque (una nueva fase)
 FROM nginx
+
+# Exponemos el puerto 80
+EXPOSE 80
+
 # indicamos que queremos copiar de la fase builder, y que carpeta
 # queremos copiar, y a dónde copiar (tiene 
 # ruta recomendada por docker hub)
